@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<!--<form method="post" action="/">-->
+    <!--<input type="hidden" name="__method" value="search"/>-->
+    <!--<input type="submit" value="提交"/>-->
+<!--</form>-->
+
+<button id="test"> test </button>
+<script>
+    test.onclick = function(){
+        var xhr = new XMLHttpRequest();
+        //输出后台返回结果
+        xhr.onload = function(result){
+            console.log(this.responseText);
+        }
+        xhr.open('post','/?__method=search',true); //设置路由
+//        xhr.setRequestHeader('X-HTTP-Method-Override','search'); //设置头部请求方式
+        xhr.send();
+    }
+</script>
+
+</body>
+</html>

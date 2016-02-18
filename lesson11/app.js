@@ -43,10 +43,18 @@ router.get('/url1', function(req,res){
 
 
 var app = express();
+
+//根路由加入中间件,访问根的时候首先经过该函数
+app.use('/',function(req,res,next){
+    req.name = 'tiger';
+    next();
+});
+
+
 app.use(testmiddle);//加入定义的中间件函数
 app.get('/', function(req,res){
 
-    res.send('hello world');
+    res.send('hello world ' + req.name);
 
 });
 

@@ -1,0 +1,14 @@
+{
+  "name": "lesson20",
+  "version": "1.0.0",
+  "description": "静态资源访问",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

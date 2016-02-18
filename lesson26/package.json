@@ -1,0 +1,16 @@
+{
+  "name": "lesson26",
+  "version": "1.0.0",
+  "description": "动态页面渲染",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "consolidate": "^0.14.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  }
+}
